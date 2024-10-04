@@ -1,0 +1,163 @@
+/* Flexbox Part 1 */
+
+#flex-section1 ul {
+    display: flex;                
+    justify-content: space-evenly; 
+	list-style: none;               
+    margin: 0;                      
+    padding: 0;                     
+}
+
+/* end Flexbox Part 1 */
+
+
+/* Flexbox Part 2 */
+
+/* Flexbox Part 2 */
+#flex-section2 ul {
+    display: flex;                  /* Enable flexbox for the list */
+    list-style: none;               /* Remove bullets from the list */
+    padding: 0;                     /* Remove padding from the list */
+    margin: 0;                      /* Remove margin from the list */
+}
+
+#flex-section2 li {
+    flex: 1;
+	font-weight: 500;                         /* Make each column take up equal width */
+}
+
+/* Reorder the columns using the order property */
+#flex-section2 .item1 {
+    order: 1;                       /* Display this as the first column */
+}
+
+#flex-section2 .item2 {
+    order: 3;                       /* Display this as the last column */
+}
+
+#flex-section2 .item3 {
+    order: 2;                       /* Display this as the middle column */
+}
+/* end Flexbox Part 2 */
+
+
+/* end Flexbox Part 2 */
+
+
+/* Flexbox Part 3 */
+/* Flexbox Part 3 */
+
+#flex-section3 .box {
+    display: flex;                  /* Enable flexbox for the box */
+    flex-direction: column;         /* Arrange items in a column */
+    justify-content: center;        /* Center items vertically */
+    align-items: center;            /* Center items horizontally */
+    height: auto;                   /* Allow height to adjust based on content */
+    border: 1px solid #ccc;         /* Optional: Add border for visibility */
+    padding: 20px;                  /* Optional: Add padding */
+    border-radius: 8px;             /* Optional: Add rounded corners */
+    overflow: hidden;               /* Hide overflow content */
+}
+
+#flex-section3 .tags ul {
+    display: flex;                  /* Enable flexbox for the tags list */
+    list-style: none;               /* Remove bullet points */
+    padding: 0;                     /* Remove padding from the list */
+    margin: 10px 0 0;              /* Add margin to the top of the tags list */
+    flex-wrap: wrap;                /* Allow tags to wrap if they overflow */
+}
+
+/* end Flexbox Part 3 */
+
+
+/* Grid Part 1 */
+
+#grid-section1 .grid {
+    display: grid;                        /* Enable grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+    grid-auto-rows: 100px;               /* Set each row height to 100px */
+    gap: 20px;                            /* Set gap between rows and columns */
+}
+
+
+/* end Grid Part 1 */
+
+
+/* Grid Part 2 */
+
+#grid-section2 .gridboxred {
+    grid-column: 1 / 3;   /* Span from column 1 to column 2 (covering 2 columns) */
+    grid-row: 2;           /* Position in row 2 (middle row) */
+	margin: 2px;
+}
+
+#grid-section2 .gridboxblue {
+    grid-column: 2 / 4;    /* Span from column 2 to column 3 (covering the last two columns) */
+    grid-row: 1 / 4;       /* Span from row 1 to row 3 (covering all rows) */
+    position: relative;     /* Required for z-index to take effect */
+}
+#grid-section2 .gridboxred {
+
+}
+
+/* end Grid Part 2 */
+
+
+/* Grid Part 3 */
+
+/* Grid Part 3 */
+#grid-section3 .grid {
+    display: grid;                            /* Enable grid layout */
+    grid-template-columns: 2fr 1fr;          /* First column is twice the width of the second */
+    grid-template-rows: 100px 300px 100px;   /* First and last rows are 100px, middle row is 300px */
+    gap: 10px;                                /* 10px gap between all rows and columns */
+}
+
+#grid-section3 .box1 {
+    grid-column: 1 / 3;                       /* Span both columns */
+    grid-row: 1;                              /* Position in the first row */
+}
+
+#grid-section3 .box2 {
+    grid-column: 1;                           /* Position in the first column */
+    grid-row: 2;                              /* Position in the second row */
+}
+
+#grid-section3 .box3 {
+    grid-column: 2;                           /* Position in the second column */
+    grid-row: 2;                              /* Position in the second row */
+}
+
+#grid-section3 .box4 {
+    grid-column: 1 / 3;                       /* Span both columns */
+    grid-row: 3;                              /* Position in the last row */
+}
+
+
+
+
+/* end Grid Part 3 */
+
+
+/* Transition Part */
+
+#transition-section .box a {
+	display: inline-block;
+	background-color: #ccc;
+	color: #000;
+	padding: 20px;
+	text-decoration: none;
+	transition: background-color, color;
+	transition-duration: 3s;
+
+}
+
+#transition-section .box a:hover {
+	background-color: #cc0000;
+	color: #fff;
+	transition-duration: 0.5s;
+
+
+}
+
+/* end Transition Part */
